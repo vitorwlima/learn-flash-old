@@ -1,10 +1,13 @@
 import type { NextPage } from 'next'
+import { Header } from '../components/Header'
+import { NewStudy } from '../sections/NewStudy'
 
 const Home: NextPage = () => {
   return (
-    <div>
-      Hello world
-    </div>
+    <main className='flex flex-col gap-10'>
+      <Header />
+      <NewStudy />
+    </main>
   )
 }
 
