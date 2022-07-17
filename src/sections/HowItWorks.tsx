@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 export const HowItWorks: FC = () => {
   return (
-    <section className='px-4 flex flex-col gap-8 lg:flex-row lg:items-center'>
+    <section className='px-4 py-10 flex flex-col gap-8 lg:flex-row lg:items-center bg-sky-100'>
       <div>
         <h2 className='text-sky-400 text-center'>AFINAL, O QUE SÃO OS FLASHCARDS?</h2>
         <strong className='text-xl text-center block mt-1'>Como funciona</strong>

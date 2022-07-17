@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import { Header } from '../components/Header'
+import { Advantages } from '../sections/Advantages'
 import { HowItWorks } from '../sections/HowItWorks'
 import { NewStudy } from '../sections/NewStudy'
 
@@ -9,6 +10,7 @@ const Home: NextPage = () => {
       <Header />
       <NewStudy />
       <HowItWorks />
+      <Advantages />
     </main>
   )
 }
