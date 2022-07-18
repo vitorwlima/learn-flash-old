@@ -22,18 +22,21 @@ export const Advantages: FC = () => {
       text: 'Compartilhe os materiais que você fez na plataforma e pesquise os de outras pessoas para adquirir ainda mais conhecimento.',
     },
   ]
+
   return (
-    <section className='px-4 flex flex-col lg:flex-row lg:items-center'>
-      <h2 className='text-sky-400 text-center'>POR QUE USAR FLASHCARDS?</h2>
-      <strong className='text-xl text-center block mt-1'>Vantagens</strong>
-      <div className='mt-4 flex flex-col gap-2'>
-        {advantages.map((adv) => (
-          <div key={adv.id} className=' p-4 flex flex-col items-center shadow gap-4'>
-            {<adv.icon color='#38BDF8' size={64} />}
-            <strong className='text-lg'>{adv.title}</strong>
-            <p className='text-center'>{adv.text}</p>
-          </div>
-        ))}
+    <section className='px-4 lg:px-16'>
+      <div className='flex flex-col'>
+        <h2 className='text-sky-400 text-center'>POR QUE USAR FLASHCARDS?</h2>
+        <strong className='text-xl text-center block mt-1'>Vantagens</strong>
+        <div className='mt-4 flex flex-col gap-2 lg:flex-row lg:gap-8'>
+          {advantages.map((adv) => (
+            <div key={adv.id} className='p-4 flex flex-col items-center shadow gap-4 flex-1'>
+              {<adv.icon color='#38BDF8' size={64} />}
+              <strong className='text-lg text-center'>{adv.title}</strong>
+              <p className='text-center'>{adv.text}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )
