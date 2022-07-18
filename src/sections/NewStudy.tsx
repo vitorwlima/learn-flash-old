@@ -20,7 +20,7 @@ export const NewStudy: FC = () => {
           </li>
         ))}
       </ul>
-      <button className='bg-sky-400 text-white px-6 py-1 rounded-md text-sm'>
+      <button className='bg-sky-400 text-white px-6 py-2 rounded-md text-sm'>
         INSCREVA-SE AGORA
       </button>
     </section>

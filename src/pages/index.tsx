@@ -3,6 +3,7 @@ import { Header } from '../components/Header'
 import { Advantages } from '../sections/Advantages'
 import { HowItWorks } from '../sections/HowItWorks'
 import { NewStudy } from '../sections/NewStudy'
+import { Subscription } from '../sections/Subscription'
 
 const Home: NextPage = () => {
   return (
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
       <NewStudy />
       <HowItWorks />
       <Advantages />
+      <Subscription />
     </main>
   )
 }
