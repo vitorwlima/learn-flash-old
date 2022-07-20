@@ -1,5 +1,6 @@
 import { withTRPC } from '@trpc/next'
 import type { AppProps } from 'next/app'
+import Head from 'next/head'
 import { Toaster } from 'react-hot-toast'
 import { AppRouter } from 'src/backend/router'
 import superjson from 'superjson'
@@ -8,6 +9,18 @@ import '../styles/globals.css'
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
+      <Head>
+        <title>Learn Flash</title>
+        <meta name='description' content='A nova forma de estudar com flashcards interativos' />
+        <meta property='og:title' content='Learn Flash' />
+        <meta
+          property='og:description'
+          content='A nova forma de estudar com flashcards interativos'
+        />
+        <meta property='og:type' content='website' />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
+
       <Toaster />
       <Component {...pageProps} />
     </>
