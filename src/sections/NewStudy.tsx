@@ -9,6 +9,13 @@ export const NewStudy: FC = () => {
     'Plataforma super fácil de utilizar',
   ]
 
+  const handleRedirectToSubscribe = () => {
+    document.getElementById('__next')?.scrollIntoView({
+      block: 'end',
+      behavior: 'smooth',
+    })
+  }
+
   return (
     <section className='px-4 lg:px-16'>
       <div>
@@ -23,7 +30,10 @@ export const NewStudy: FC = () => {
             </li>
           ))}
         </ul>
-        <button className='bg-sky-400 text-white px-6 py-2 rounded-md text-sm'>
+        <button
+          className='bg-sky-400 text-white px-6 py-2 rounded-md text-sm'
+          onClick={handleRedirectToSubscribe}
+        >
           INSCREVA-SE AGORA
         </button>
       </div>
